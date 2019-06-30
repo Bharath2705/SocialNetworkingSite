@@ -1,0 +1,60 @@
+<div class = "row main-container-text">
+  <div class = "col-md-10">Buzznet</div>
+  <div class="col-md-2 btn-group" role="group">
+    <button type="button" class="btn btn-secondary" routerLink = "/login">Logout</button>
+  </div>
+</div>
+
+
+
+<nav class='navbar'>
+  <button type="button" class="links btn btn-default" [routerLink] = "['./notifications']">Notifications</button>
+  <button type="button" class="links btn btn-default" [routerLink] = "['./search']">Search</button>
+  <button type="button" class="links btn btn-default" [routerLink] = "['./privacy']">Privacy</button>
+  <button type="button" class="links btn btn-default" [routerLink] = "['./post']">Post</button>
+  <!-- <button type="button" class="links btn btn-default" [routerLink] = "['./viewaccount']">View Account</button> -->
+  <button type="button" class="links btn btn-default" [routerLink] = "['./messaging']">Messaging</button>
+  <button type="button" class="links btn btn-default" [routerLink] = "['./myProfilePage']">My Profile</button>
+  </nav>
+    <!-- <a class = "header-links-style" [routerLink] = "['./notifications']">notifications</a>
+    <a class = "header-links-style" [routerLink] = "['./search']">search</a>
+    <a class = "header-links-style" [routerLink] = "['./privacy']">privacy</a>
+    <a class = "header-links-style" [routerLink] = "['./post']" >post</a>
+    <a class = "header-links-style" [routerLink] = "['./viewaccount']">view account</a>
+    <a class = "header-links-style" [routerLink] = "['./messaging']">messaging</a>
+    <a class = "header-links-style" [routerLink] = "['./myProfilePage']">My Profile</a> -->
+
+<div  class = "row" style = " border: solid">
+  <div class = "col-md-3 left">
+    <div>
+      <img src = "{{ProfilePicture}}" class=" rounded-circle " alt = "profile pic" width="200px" height = "200px" >
+      <div class ="row left-text" >
+        <div class = "col-md-2">
+      <p><i class = "material-icons" style="font-size:24px"> person</i></p>
+</div>
+<div class = "col-md-5">
+  <h5>{{name}}</h5>
+  </div>
+</div>
+<div class ="row left-text" >
+  <div class = "col-md-2">
+<p><i class = "material-icons" style="font-size:24px"> email</i></p>
+</div>
+<div class = "col-md-5">
+<h5>{{emailId}}</h5>
+</div>
+</div>
+<div class ="row left-text" >
+  <div class = "col-md-2">
+<p><i class = "material-icons" style="font-size:24px"> business</i></p>
+</div>
+<div class = "col-md-5">
+<h5>{{address}}</h5>
+</div>
+</div>
+      </div>
+      </div>
+      <div class = "col-md-9 content">
+        <router-outlet></router-outlet>
+        </div>
+    </div>

@@ -1,0 +1,10 @@
+<div class="row">
+  <div class="col-md-4 offset-md-3 search">
+ <input style="width:500px; border-radius:25px; height:50px; padding:10px;" type="text" placeholder="Search for a user.." (keyup)="searchForThisUsers($event)">
+
+  <p *ngIf="errorPresent">{{errorMessage}}</p>
+
+
+  <app-search-each-child  *ngFor="let userids of arrayOfIds" [userId]="userids"></app-search-each-child>
+</div>
+</div>

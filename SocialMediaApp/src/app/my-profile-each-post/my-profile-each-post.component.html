@@ -1,0 +1,57 @@
+<div class="row main">
+  <div class="col-md-4 offset-md-2 ">
+<div  class = "size"  >
+  <h3 style = ""><b>{{postTexted}}</b></h3>
+  <small>{{date}}</small>
+  <button class="btn btn-danger" *ngIf="isAdmin" (click)="deleteThisPost()">Delete!</button>
+
+  <div *ngIf="imageFlag">
+    <div class="card" style="width: 500px">
+    <img class="img-responsive" src={{imgOrVid}}  class="img-thumbnail" width="500" height="500">
+    <!-- <div class="card-body">
+      <h4 class="card-text">{{postTexted}}</h4>
+    </div> -->
+    </div>
+  </div>
+  <div *ngIf="videoFlag" width="500px" height="300px">
+    <video  controls id="videoPlayer" width="500px" height="300px">
+      <source src="{{videoSource}}" type="video/mp4" width="500px" height="300px"/>
+    </video>
+  </div>
+  <br>
+    <button type="button"class="btn btn-primary btn-sm"   (click)="openComments()">Comments</button>
+    <div *ngIf = "showCommentsFlag">
+      <br>
+      <div class = "row col-md-10">
+    	<div class = "form-group">
+      <input type="text" (keydown.Enter)="postNewComment()" class="form-control round" id="commentText" [(ngModel)]="newCommentText" name="commentText"   placeholder = " write a comment..."(keyup) = "onCommentTextEntered($event)">
+      </div>&nbsp;
+      <div class = "form-group">
+      <button  type="button" id="com" class="commentbutton" class="btn btn-success btn-sm"  (click)="postNewComment()" >Comment!</button>
+    </div>
+    </div>
+    <input type="file" [(ngModel)]="selectedImageOrVideo" name ="commentPic" accept="image/*|video/* " (change) = "onImageUpload($event)"><br>
+
+      <br>
+      <app-each-comment-of-posts *ngFor="let eachCommentId of commentIdArray" [eachCommentId]="eachCommentId"></app-each-comment-of-posts>
+    </div>
+</div>
+</div>
+</div>
+<br/>
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="..." alt="Card image cap">
+  <div class="card-body">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div> -->

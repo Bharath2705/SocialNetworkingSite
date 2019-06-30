@@ -1,0 +1,52 @@
+/* .main{
+  background-image: url("src\app\registration-user\r4.jpg");
+  background-repeat: repeat-y;
+  color:white;
+  padding:100px;
+} */
+.main{
+  color:white;
+  padding: 150px;
+  background: url("backgrnd.png") no-repeat center center #000;
+}
+
+.main-container-text{
+  background-image: url("10.png");
+  color: #FDFDFD;
+  font-family: 'Courier New';
+  font-size: 40px;
+  height: 100px;
+  font-weight: 600;
+  text-align: left;
+  padding: 20px;
+}
+
+.footer {
+    background-color: #333;
+    padding: 15px;
+    position: fixed;
+    width:100%;
+    font-size: 80%;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+.footer-nav li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 20px;
+}
+.footer-nav li a:link,
+.footer-nav li a:visited{
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #fff;
+}

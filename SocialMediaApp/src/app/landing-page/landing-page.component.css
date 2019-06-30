@@ -1,0 +1,35 @@
+.main-container-text{
+  background-image: url("10.png");
+  color: #FDFDFD;
+  font-family: 'Courier New';
+  font-size: 40px;
+  height: 100px;
+  font-weight: 600;
+  text-align: left;
+  padding: 20px;
+}
+.navbar{
+	background-color: #e8eaf6;
+}
+
+.links{
+		color: #1A237E;
+}
+.left{
+/* text-align: center; */
+	 		padding: 20px;
+      /* border:dotted; */
+      overflow: hidden;
+    }
+.left-text{
+padding:1px;
+}
+.content{
+	background-color: #cfd8dc;
+}
+/* img{
+  border-radius: 50%;
+} */
+/* .scroll{
+
+} */

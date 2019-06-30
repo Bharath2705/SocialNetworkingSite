@@ -1,0 +1,28 @@
+.container{
+  /* border: dashed; */
+  border: 10px outset #3F51B5;
+  background-color: white;
+}
+h1 {
+    color: red;
+}
+
+.scroll{
+  overflow: auto;
+  height: 300px;
+
+}
+.size{
+    /* border: solid; */
+}
+.outline{
+  border: solid;
+}
+.messages{
+
+  border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    /* padding: 10px;
+    margin: 10px 0; */
+}

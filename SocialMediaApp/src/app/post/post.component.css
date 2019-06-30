@@ -1,0 +1,15 @@
+.main{
+/* margin-top: 10px; */
+padding:50px;
+}
+.container{
+  background-color:white;
+  border: 15px outset #3F51B5;
+
+}
+.top{
+  margin-top: 50px;
+}
+.bottom{
+  margin-bottom: 50px;
+}

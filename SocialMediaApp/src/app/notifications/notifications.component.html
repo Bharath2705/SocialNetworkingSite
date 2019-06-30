@@ -1,0 +1,12 @@
+<div *ngIf="requests?.length">
+  <h2>Friend Requests</h2>
+  <div *ngFor="let request of requests">
+    <app-requests [email]="request"></app-requests>
+  </div>
+</div>
+
+<p>
+  Comments Notification!
+</p>
+
+<app-notification-comments-each-child *ngFor="let commentids of arrayOfCommentObjs" [commentId]="commentids"></app-notification-comments-each-child>
